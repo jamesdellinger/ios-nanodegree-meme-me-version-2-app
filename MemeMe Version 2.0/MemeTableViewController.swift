@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MemeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MemeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate {
     
     // MARK: Properties
     // An array of memes
@@ -22,6 +22,9 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         // The array of memes that the user has created
         // Stored in the AppDelegate class
         memes = appDelegate.memes
+        
+        // Display the edit button
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     // MARK: Table methods
@@ -67,9 +70,15 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         // Push the new controller onto the stack
         self.navigationController!.pushViewController(controller, animated: true)
-        
     }
     
-    
-
+    // Delete the table row, and corresponding item in memes array, when user swipes a row
+    // to the left
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("Deleted")
+            memes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 }

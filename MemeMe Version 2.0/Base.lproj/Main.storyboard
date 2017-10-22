@@ -132,9 +132,7 @@
         <scene sceneID="ZOP-qd-LpI">
             <objects>
                 <tabBarController id="dMi-aW-9hi" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="F1f-i5-NqA">
-                        <barButtonItem key="backBarButtonItem" systemItem="done" id="C1w-AO-Amk"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="F1f-i5-NqA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Aho-Zx-CrN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -153,7 +151,7 @@
         <scene sceneID="BOO-R5-g9U">
             <objects>
                 <navigationController id="EtP-gQ-tJ4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BlV-PE-1RL">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="BlV-PE-1RL">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -207,7 +205,9 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Collection" image="collection_icon" id="Pr3-pj-BRh"/>
-                    <navigationItem key="navigationItem" id="smh-wg-GWX"/>
+                    <navigationItem key="navigationItem" id="smh-wg-GWX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="7kM-nE-kAw"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="U2J-D3-YZk" id="Qkd-cV-nmg"/>
                     </connections>
@@ -251,6 +251,7 @@
                                     <constraints>
                                         <constraint firstItem="Rv2-fJ-ynr" firstAttribute="leading" secondItem="xqv-lU-Rl7" secondAttribute="leading" constant="8" id="Kfi-ez-ViZ"/>
                                         <constraint firstItem="r3f-B4-Hku" firstAttribute="centerY" secondItem="xqv-lU-Rl7" secondAttribute="centerY" id="LBO-jB-6Qu"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r3f-B4-Hku" secondAttribute="trailing" constant="20" symbolic="YES" id="e9y-Se-azk"/>
                                         <constraint firstItem="Rv2-fJ-ynr" firstAttribute="centerY" secondItem="xqv-lU-Rl7" secondAttribute="centerY" id="gNz-LI-yhx"/>
                                         <constraint firstItem="r3f-B4-Hku" firstAttribute="leading" secondItem="Rv2-fJ-ynr" secondAttribute="trailing" constant="15" id="gVm-33-nGR"/>
                                     </constraints>
@@ -268,7 +269,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Table" image="table_icon" id="it7-ba-air"/>
-                    <navigationItem key="navigationItem" id="Sd5-Y6-6rh"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Sd5-Y6-6rh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Uhi-G0-YKh"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqA-1v-TxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +294,7 @@
                             <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="SLh-o8-DHC">
                                 <rect key="frame" x="-4" y="44" width="383" height="579"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="9C3-6U-OBx">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C3-6U-OBx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="LJi-9m-gU6"/>
@@ -309,7 +314,7 @@
                                 </items>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-zt-eqn">
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-zt-eqn">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m95-ev-mct"/>
