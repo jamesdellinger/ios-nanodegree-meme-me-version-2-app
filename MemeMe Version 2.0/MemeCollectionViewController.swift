@@ -44,6 +44,7 @@ class MemeCollectionViewController: UICollectionViewController {
 
     // MARK: Life Cycle
     override func viewDidLoad() {
+        super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         // The array of memes that the user has created
@@ -112,15 +113,4 @@ class MemeCollectionViewController: UICollectionViewController {
         // Present the view controller using navigation
         navigationController!.pushViewController(controller, animated: true)
     }
-    
-//    func collec(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        print(memes)
-//        if editingStyle == .delete {
-//            print("Deleted")
-//            memes.remove(at: indexPath.row)
-//            tableView.deleteRows(at: [indexPath], with: .automatic)
-//            print(memes)
-//        }
-//    }
-    
 }

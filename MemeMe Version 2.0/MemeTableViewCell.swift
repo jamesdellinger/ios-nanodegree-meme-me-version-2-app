@@ -14,7 +14,6 @@ class MemeTableViewCell: UITableViewCell {
     @IBOutlet weak var tableRowImageView: UIImageView!
     @IBOutlet weak var tableRowLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

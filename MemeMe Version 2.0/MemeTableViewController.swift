@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MemeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate {
+class MemeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Properties
     // An array of memes
@@ -17,18 +17,16 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     // MARK: Life Cycle
     override func viewDidLoad() {
+        super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         // The array of memes that the user has created
         // Stored in the AppDelegate class
         memes = appDelegate.memes
-        
-        // Display the edit button
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     // MARK: Table methods
-    
+   
     // Get the number of rows (memes) that must appear in the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // The number of memes that the user has saved, which is the number
@@ -70,15 +68,5 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         // Push the new controller onto the stack
         self.navigationController!.pushViewController(controller, animated: true)
-    }
-    
-    // Delete the table row, and corresponding item in memes array, when user swipes a row
-    // to the left
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            print("Deleted")
-            memes.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
-        }
     }
 }
