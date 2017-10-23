@@ -33,7 +33,15 @@ With some user-friendly tweaks:
 
     <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.49.40%20PM.png" height="400">
     
-4. Finally, when saving a meme, app auto-crops out app chrome, borders, empty space, and only saves the actual meme
+4. Top and Bottom text fields auto-shrink size of text down to a minimum size. This keeps really long meme labels from
+    overrunning the width of the meme image, no matter how narrow or wide it is. After the minimum text size is reached, only
+    then does the label get truncated:
+    
+    Screen Shot 2017-10-22 at 10.23.05 PM
+    
+    Screen Shot 2017-10-22 at 10.24.31 PM
+    
+5. Finally, when saving a meme, app auto-crops out app chrome, borders, empty space, and only saves the actual meme
    image, itself:
     
     <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.36.19%20PM.png" height="400">
