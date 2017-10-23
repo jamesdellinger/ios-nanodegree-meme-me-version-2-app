@@ -27,7 +27,7 @@ With some user-friendly tweaks:
 
 3. When a picture is loaded into the meme editor, top and bottom meme text fields always automatically readjust to top of
     meme image, no matter if image is landscape or portrait. User doesn't have to rotate phone to landscape to get the text
-    fields to the top and bottom of a landscape image. (Cause really, as of 2017, who even rotates their phones to landscape?):
+    fields to the top and bottom of a landscape image (though app does support rotation, should user desire to do so). (But really, as of 2017, who even rotates their phones to landscape?):
     
     <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.35.58%20PM.png" height="400">
 
