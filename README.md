@@ -9,27 +9,31 @@ This repository contains the MemeMe Version 2.0 app project for the UIKit Fundam
 With some user-friendly tweaks:
 
 1. First screen user sees upon app opening is meme editor screen. Like camera in Snapchat, users would open this app to
-    create and send out a meme, not to browse a library of old memes from long ago. Also, imagine how bad it would be
-    opening up to an empty collection view on first time ever app launch:
+    create and send out a funny meme that just popped into their mind. Boom. Also, imagine how bad it would be opening up 
+    to an empty collection view on first-time-ever app launch. 
+    
+    No one is gonna open this app to enjoy its 
+    table and collection view meme browsing experience. (Though, it is possible to browse through the library of old memes 
+    from long ago, should one desire.):
 
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.35.29 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.35.29%20PM.png" height="400">
 
 2. Collection and table views uniformly display the most ideal crops of meme images. No matter if the meme image's orientation
     is landscape or portrait, thumbnail crop includes all, or at least the bulk of, the top and bottom white meme text:
 
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.27.32 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.27.32%20PM.png" height="300">
 
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.27.46 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.27.46%20PM.png" height="300">
 
 3. When a picture is loaded into the meme editor, top and bottom meme text fields always automatically readjust to top of
     meme image, no matter if image is landscape or portrait. User doesn't have to rotate phone to landscape to get the text
     fields to the top and bottom of a landscape image. (Cause really, as of 2017, who even rotates their phones to landscape?):
     
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.35.58 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.35.58%20PM.png" height="400">
 
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.49.40 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.49.40%20PM.png" height="400">
     
-    4. Finally, when saving a meme, app auto-crops out app chrome, borders, empty space, and only saves the actual meme
-    image, itself:
+4. Finally, when saving a meme, app auto-crops out app chrome, borders, empty space, and only saves the actual meme
+   image, itself:
     
-    /Users/jamesdellinger/Dropbox/Files/Udacity Classes/iOS Developer Nanodegree/ios-nanodegree-meme-me-version-2-app/Screenshots/Screen Shot 2017-10-22 at 9.36.19 PM.png
+    <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.36.19%20PM.png" height="400">
