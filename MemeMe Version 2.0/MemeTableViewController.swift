@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MemeTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MemeTableViewController: UITableViewController {
     
     // MARK: Properties
     // An array of memes
@@ -28,14 +28,14 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: Table methods
    
     // Get the number of rows (memes) that must appear in the table
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // The number of memes that the user has saved, which is the number
         // of rows that will be displayed in this table
         return memes.count
     }
     
     // Display each row (meme) with the proper cell info inside it
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Retrieve the meme to be displayed in the row
         let meme: Meme = memes[(indexPath as NSIndexPath).row]
@@ -55,7 +55,7 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     // Push the Meme Detail View Controller displaying the selected
     // meme's details when the user taps on that meme's row
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
         // Get the Meme Detail View Controller from the Storyboard
         let controller = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController")as! MemeDetailViewController
