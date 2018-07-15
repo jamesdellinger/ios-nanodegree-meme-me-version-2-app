@@ -1,17 +1,14 @@
-<img src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd003.png" alt="iOS Developer Nanodegree logo" height="70" >
+# iOS Developer Nanodegree: MemeMe Version 2.0 App
+*Mastering the major UI components found in essentially every app, and combining them with the camera and social media activity views.*
 
-# MemeMe Version 2.0 App
+<img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/iosndlogo.jpg" alt="iOS Developer Nanodegree logo" height="100" >
 
-*Master the major UI components found in essentially every app, and combine them with the camera and social media activity view.*
-
-![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
-
-This repository contains the MemeMe Version 2.0 app project for the UIKit Fundamentals course in Udacity's iOS Nanodegree.
+## Overview
+This repository contains the MemeMe Version 2.0 app project for the **UIKit Fundamentals** course in Udacity's [iOS Nanodegree](https://www.udacity.com/course/ios-developer-nanodegree--nd003).
 
 MemeMe Version 2.0 enables a user to take a picture, and add text at the top and bottom to form a meme. They can then share this meme on Facebook and Twitter, and also by SMS or email. In this app, sent memes will appear in a tab view with two tabs: a table view and a collection view.
 
-My implementation has the following unique user-friendly tweaks:
-
+## My Implementation's User-friendly Tweaks
 1. First screen user sees upon app opening is meme editor screen. Like camera in Snapchat, users would open this app to
     create and send out a funny meme that just popped into their mind. Boom. Also, imagine how bad it would be opening up
     to an empty collection view on first-time-ever app launch.
@@ -50,8 +47,7 @@ My implementation has the following unique user-friendly tweaks:
 
     <img src="https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/Screenshots/Screen%20Shot%202017-10-22%20at%209.36.19%20PM.png" height="400">
 
-### Project Grading and Evaluation
+## Project Grading and Evaluation
+* [Project Review](https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/ios-nanodegree-meme-me-version-2-app-review.pdf)
 
-[Project Review](https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/ios-nanodegree-meme-me-version-2-app-review.pdf)
-
-[Project Grading Rubric](https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/meme-me-version-2-app-specs-and-rubric.pdf)
+* Project Grading Rubric](https://github.com/jamesdellinger/ios-nanodegree-meme-me-version-2-app/blob/master/meme-me-version-2-app-specs-and-rubric.pdf)
